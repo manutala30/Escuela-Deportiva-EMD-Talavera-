@@ -1,0 +1,396 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    width: 100%;
+}
+body{
+    width: 100%;
+}
+#titulo
+{
+    text-align: center;
+    font-style: oblique;
+    background: linear-gradient(to bottom, #2e9fff, whitesmoke);
+    margin-bottom: 0;
+}
+#titulo h1
+{
+    background: -webkit-linear-gradient( darkblue, dimgray);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+nav{
+    margin-top: 0;
+    background: linear-gradient(to top, #2e9fff, whitesmoke);
+}
+.navbar-brand
+{
+    margin-left: 1%;
+}
+#contenedor{
+    background: linear-gradient(to bottom, #2e9fff, white);
+    clear: left;
+}
+#logo img
+{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+ul{
+    display: flex;
+}
+header li:last-child{
+    background-color: darkblue;
+}
+header li{
+    border: 1px solid black;
+    flex-grow:2 ;
+    list-style-type: none;
+    text-align: center;
+    padding-top: 10px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+#contenedor{
+    height: auto;
+}
+#contenedor h1{
+    padding-top: 1em;
+    text-align: center;
+    font-size: 2em;
+    color: darkblue;
+    font-style: italic;
+    text-decoration: underline;
+
+}
+.slider{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    height: 500px;
+
+ }
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 400%;
+    animation: cambio 20s infinite;
+}
+.slider li{
+    width: 100%;
+    list-style-type: none;
+}
+.slider img
+{
+    width: 100%;
+    height: 40em;
+}
+@keyframes cambio {
+    0% { margin-left:0; }
+    15% { margin-left:0; }
+
+    15% { margin-left:-100%; }
+    45% { margin-left:-100%; }
+
+    50% { margin-left:-200%; }
+    70% { margin-left:-200%; }
+
+    75% { margin-left:-300%; }
+    100% { margin-left:-300%; }
+
+}
+#derecha{
+    margin-top:17em;
+    float: right;
+    width: 50%;
+    text-align: center;
+    height: 8em;
+}
+#izquierda{
+    margin-top: 2em;
+    float: left;
+    width: 50%;
+    text-align: center;
+    height: 5em;
+    padding-top: 1em;
+}
+#izquierda p{
+    padding-top: 1em;
+    width: 50%;
+    margin-left: 3%;
+    text-align: justify;
+    float: left;
+}
+#izquierda img{
+    padding-top: 1em;
+    float: left;
+    margin-left: 5%;
+    width: 40%;
+    height: 10em;
+}
+#derecha img
+{
+    padding-top: 1em;
+    float: left;
+    margin-left: 3%;
+    width: 40%;
+    height: 10em;;
+}
+ #derecha p
+ {
+    padding-top: 1em;
+     float: left;
+     margin-left: 3%;
+     width: 50%;
+     text-align: justify;
+ }
+ #derecha
+ {
+     margin-bottom: 6em;
+ }
+hr{
+    height: 0.5em;
+    width: 100%;
+    background-color: darkgray;
+}
+footer{
+
+    background: linear-gradient(to bottom, white, indianred);
+    width: 100%;
+    overflow: hidden;
+}
+footer div{
+    float: left;
+
+}
+#redes{
+    margin-top: 40px;
+    width: 400px;
+    margin-left: 50px;
+}
+#contacto{
+    margin-top: 40px;
+    width: 400px;
+    margin-left: 50px;
+
+}
+#miarma{
+    width: 400px;
+}
+#redes{
+    width: 300px;
+}
+#miarma img{
+    width: 150px ;
+    height: 140px ;
+    padding-left: 60px;
+
+}
+#contacto h3 {
+    margin-left:50px;
+}
+.red1 img
+{
+    display: flex;
+    margin-right: 10px;
+    width: 50px;
+}
+/*Menu de navegacion desplegable*/
+.navbar .nav-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.dropdown-toggle::after {
+    transition: transform 0.15s linear;
+}
+
+.show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px);
+}
+/*Imagenes de reservas de de las instalaciones */
+#reservas img
+{
+    padding-left: 5%;
+    padding-top: 2em;
+    height: 250px;
+    width: 25%;
+    float: left;
+
+}
+.zoom{
+    transition: transform 0.5s;
+}
+.zoom:hover
+{
+    transform:scale(1.1);
+}
+a{
+    color: white;
+}
+#horarios
+{
+    border: 2px solid darkblue;
+    margin: 1em 4%;
+    border-radius: 20px;
+}
+#horarios input
+{
+    margin-top: 3em;
+    text-align: center;
+}
+#horarios label
+{
+    margin-left: 1%;
+    font-weight: bold;
+    font-size: 18px;
+}
+#paypal-button-container
+{
+    width: 40%;
+    margin: 2em 40%;
+}
+/*Para que el Calendario se sobreponga a cualquier otra cosa*/
+#ui-datepicker-div {
+    z-index: 9999999!important;
+}
+#nombre
+{
+    width: 50%
+}
+
+#header {
+    margin:auto;
+    width:500px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+ul, ol {
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    background: linear-gradient(to top, #2e9fff, whitesmoke);
+    color:black;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+
+.nav li a:hover {
+    background-color:#434343;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:14.5%;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-180px;
+    top:0px;
+}
+/*Página de error*/
+body {
+    background-color: #2F3242;
+}
+svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -400px;
+}
+.message-box {
+    height: 200px;
+    width: 380px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: 50px;
+    color: #FFF;
+    font-family: Roboto;
+    font-weight: 300;
+}
+.message-box h1 {
+    font-size: 60px;
+    line-height: 46px;
+    margin-bottom: 40px;
+}
+.buttons-con .action-link-wrap {
+    margin-top: 40px;
+}
+.buttons-con .action-link-wrap a {
+    background: #68c950;
+    padding: 8px 25px;
+    border-radius: 4px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px
+}
+.buttons-con .action-link-wrap a:hover {
+    background: #5A5C6C;
+    color: #fff;
+}
+
+#Polygon-1 , #Polygon-2 , #Polygon-3 , #Polygon-4 , #Polygon-4, #Polygon-5 {
+    animation: float 1s infinite ease-in-out alternate;
+}
+#Polygon-2 {
+    animation-delay: .2s;
+}
+#Polygon-3 {
+    animation-delay: .4s;
+}
+#Polygon-4 {
+    animation-delay: .6s;
+}
+#Polygon-5 {
+    animation-delay: .8s;
+}
+
+@keyframes float {
+    100% {
+        transform: translateY(20px);
+    }
+}
+@media (max-width: 450px) {
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -250px;
+        margin-left: -190px;
+    }
+    .message-box {
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -190px;
+        text-align: center;
+    }
+}

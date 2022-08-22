@@ -1,0 +1,41 @@
+
+<?php
+session_start();
+require_once 'MetodosManuelAmador.php';
+$objconexion =new clasesql();
+$consulta = "INSERT INTO `reservas`(`idUsuario`, `idDeporte`, `idPista`, `Fecha`, `idHora`, `Nombre`)
+                                      VALUES ('" . $_SESSION["id"] . "','" .$_GET["z"]. "','" .$_GET["s"]. "',
+                                        '" .$_GET["d"]. "','" .$_GET["t"]. "','" .$_SESSION["nombre"]. "')";
+$objconexion->realizarConsultas($consulta);
+if ($objconexion->comprobar()>0)
+{
+    echo'    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+            <script>
+             Swal.fire({
+
+            icon:"success",
+            text:"Reserva Realizada con éxito",
+            allowOutsideClick: false,
+            allowEscapeKey: false,
+            allowEnterKey: false,
+            stopKeydownPropagation:false,
+            backdrop:true,
+             confirmButtonColor: "Green",
+             }).then((result) => {
+            if (result.isConfirmed) {
+                window.top.location="Index.php";
+            }
+        })
+          </script>';
+}
+
+     function prueba(){
+            <?php
+            $consulta = "INSERT INTO `reservas`(`idUsuario`, `idDeporte`, `idPista`, `Fecha`, `idHora`, `Nombre`)
+                                      VALUES ('" . $_SESSION["id"] . "','" .$_GET["z"]. "','" .$_GET["s"]. "',
+                                        '" .$_GET["d"]. "','" .$_GET["t"]. "','" .$_SESSION["nombre"]. "')";
+            $objconexion->realizarConsultas($consulta);
+
+            ?>
+; ?>
