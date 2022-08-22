@@ -1,2 +1,7 @@
-👋 Welcome to the repository of Manuel Amador Bueno, a boy from Talavera la Real (Badajoz). 👋
-👨🏻‍💻 Here are all his projects that he has done. 👨🏻‍💻
+👋 Welcome to the repository of Escuela Deportiva de la Escuela Municipal de Deportes de Talavera la Real👋
+
+👨🏻‍💻 
+    For the project to work, you must first open the file located in src/Installation.php
+    Enjoy the project.
+    Made June 2021 
+👨🏻‍💻
